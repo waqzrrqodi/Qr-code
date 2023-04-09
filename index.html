@@ -8,24 +8,120 @@
     <title>Qgen</title>
 </head>
 <body>
-    <h1 class="center top-margin white">Qgen</h1>
-    <h3 class="center white">Generate your own QR-codes with fun designs</h3>
-    <div class="center">
-        <form action="generate.php" method="post">
-            <input type="text" name="url" placeholder="Enter URL" class="input">
-            <input type="submit" value="Generate" class="button">
+    <h1 class="center top-margin">Qgen</h1>
+    <h3 class="center">Generate your own QR-codes with fun designs</h3>
+    <div class="container">
+    <div class="rounded-box left-box">
+        <p class="center">Enter the URL you want to generate a QR-code for and click on the generate button. The QR-code will be generated and you can download it from the QR-codes folder.</p>
+        <div>
+            <div class="left-box">
+                <div class="center">
+                    <img src="qr-codes/qr-code2.png" alt="QR-code" class="qr-code">
+                </div>
+                <div class="center">
+                    <p>Placeholder QR-code</p>
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="colour-picker">
+                        <button class="colour-button black"></button>
+                        <button class="colour-button white"></button>
+                        <button class="colour-button blue"></button>
+                        <button class="colour-button purple"></button>
+                        <button class="colour-button green"></button>
+                        <button class="colour-button red"></button>
+                        <button class="colour-button pink"></button>
+                        <button class="colour-button teal"></button>
+                        <h2 id="colour-text">Press button to change colour.</h2>
+                </div>
+                <div class="downloaders">
+                    <a href="qr-codes/qr-code2.png" download="qr-code2.png" class="button">Placerholder Download button</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-box">
+    <div class="rounded-box">
+        <h4>Eye look:</h4>
+        <div class="eye-look">
+            <div class="eye-look-box">
+                <img src="images/eye-look1.png" alt="Eye look 1" class="eye-look-image">
+                <p class="center">Eye look 1</p>
+            </div>
+            <div class="eye-look-box">
+                <img src="images/eye-look2.png" alt="Eye look 2" class="eye-look-image">
+                <p class="center">Eye look 2</p>
+            </div>
+            <div class="eye-look-box">
+                <img src="images/eye-look3.png" alt="Eye look 3" class="eye-look-image">
+                <p class="center">Eye look 3</p>
+            </div>
+            <div class="eye-look-box">
+                <img src="images/eye-look4.png" alt="Eye look 4" class="eye-look-image">
+                <p class="center">Eye look 4</p>
+            </div>
+            <div class="eye-look-box">
+                <img src="images/eye-look5.png" alt="Eye look 5" class="eye-look-image">
+                <p class="center">Eye look 5</p>
+            </div>
+            <div class="eye-look-box">
+                <img src="images/eye-look6.png" alt="Eye look 6" class="eye-look-image">
+                <p class="center">Eye look 6</p>
+            </div>
+            <div class="eye-look-box">
+                <img src="images/eye-look7.png" alt="Eye look 7" class="eye-look-image">
+                <p class="center">Eye look 7</p>
+            </div>
+            <div class="eye-look-box">
+                <img src="images/eye-look8.png" alt="Eye look 8" class="eye-look-image">
+                <p class="center">Eye look 8</p>
+            </div>
+    <h4>Modules look:</h4>
+    <div class="modules-look">
+        <div class="modules-look-box">
+            <img src="images/modules-look1.png" alt="Modules look 1" class="modules-look-image">
+            <p class="center">Modules look 1</p>
+        </div>
+        <div class="modules-look-box">
+            <img src="images/modules-look2.png" alt="Modules look 2" class="modules-look-image">
+            <p class="center">Modules look 2</p>
+        </div>
+        <div class="modules-look-box">
+            <img src="images/modules-look3.png" alt="Modules look 3" class="modules-look-image">
+            <p class="center">Modules look 3</p>
+        </div>
+        <div class="modules-look-box">
+            <img src="images/modules-look4.png" alt="Modules look 4" class="modules-look-image">
+            <p class="center">Modules look 4</p>
+        </div>
+        <div class="modules-look-box">
+            <img src="images/modules-look5.png" alt="Modules look 5" class="modules-look-image">
+            <p class="center">Modules look 5</p>
+        </div>
+        <div class="modules-look-box">
+            <img src="images/modules-look6.png" alt="Modules look 6" class="modules-look-image">
+            <p class="center">Modules look 6</p>
+        </div>
+        <div class="modules-look-box">
+            <img src="images/modules-look7.png" alt="Modules look 7" class="modules-look-image">
+            <p class="center">Modules look 7</p>
+        </div>
+        <div class="modules-look-box">
+            <img src="images/modules-look8.png" alt="Modules look 8" class="modules-look-image">
+            <p class="center">Modules look 8</p>
+        </div>
+    </div>
+    <div class="search-box rounded-box">
+        <form action="search.php" method="post">
+            <input type="text" name="search" placeholder="Enter URL" class="input">
+            <input type="submit" value="Search" class="button">
         </form>
     </div>
     <div class="center">
         <a href="qr-codes.html" class="button">View Previously generated QR-codes</a>
     </div>
-    <div class="container rounded-box">
-        <h3 class="center">How to use</h3>
-        <p class="center">Enter the URL you want to generate a QR-code for and click on the generate button. The QR-code will be generated and you can download it from the QR-codes folder.</p>
-    </div>
-    <div class="container rounded-box">
-        <h3 class="center">How to download</h3>
-        <p class="center">To download the QR-code, click on the QR-codes folder and then click on the QR-code you want to download. Then click on the download button.</p>
-    </div>
+</div>
+</div>
 </body>
+<script src="js/script.js"></script>
 </html>

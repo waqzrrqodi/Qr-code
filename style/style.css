@@ -12,16 +12,23 @@ body {
 h1
 {
     font-size: 5em;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0;
     padding: 0;
 }
 h3
 {
     font-size: 4em;
-    font-weight: bold;
+    font-weight: 400;
     margin: 0;
     padding: 0;
+}
+
+.qr-code {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    display: block;
 }
 
 .white {
@@ -39,12 +46,91 @@ h3
 .container {
     margin: 1vh auto;
     max-width: 75vw;
+    height: 50vh;
     padding: 0 20px;
+    display: flex;
+    align-items: baseline;
 }
+
+.colour-picker {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.colour-button {
+    border-radius: 5px;
+    width: 3vh;
+    height: 3vh;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+.black {
+    background-color: #000;
+  }
+
+.white {
+    background-color: #ffffff;
+  }
+
+.blue {
+    background-color: #1877F2;
+  }
+
+.purple {
+    background-color: #5133BC;
+  }
+
+.green {
+    background-color: #008000;
+  }
+
+.red {
+    background-color: #D4134A;
+  }
+
+.pink {
+    background-color: #841839;
+  }
+
+.teal {
+    background-color: #489EAB;
+  }
 
 .rounded-box {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 1vh 1vw;
+}
+
+.left-box {
+    width: 50%;
+    float: left;
+}
+
+.quarter-box {
+    width: 25%;
+    float: right;
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 2vh 2vw;
+    width: 75%;
 }
