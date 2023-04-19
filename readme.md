@@ -7,7 +7,7 @@
 # Installation
 # --------
 # 1. Clone the repo
-# 2. Get your API key from [https://linqr.com].
+# 2. Use away
 # --------
 # Usage
 # --------
@@ -21,4 +21,4 @@
 # --------
 # 1. Fork it!
 # --------
-# ÅVA License
+# ÅVA License 2036
