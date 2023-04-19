@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.ico">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Qgen</title>
 </head>
 <body>
@@ -76,52 +78,49 @@
                 <img src="images/eye-look8.png" alt="Eye look 8" class="eye-look-image">
                 <p class="center">Eye look 8</p>
             </div>
+        </div>
     <h4>Modules look:</h4>
     <div class="modules-look">
-        <div class="modules-look-box">
-            <img src="images/modules-look1.png" alt="Modules look 1" class="modules-look-image">
-            <p class="center">Modules look 1</p>
+        <div class="modules-look-box click-box">
+            <img src="img/modules-look1.svg" alt="Modules look 1" class="modules-look-image">
         </div>
-        <div class="modules-look-box">
-            <img src="images/modules-look2.png" alt="Modules look 2" class="modules-look-image">
-            <p class="center">Modules look 2</p>
+        <div class="modules-look-box click-box">
+            <img src="img/modules-look2.svg" alt="Modules look 2" class="modules-look-image">
         </div>
-        <div class="modules-look-box">
-            <img src="images/modules-look3.png" alt="Modules look 3" class="modules-look-image">
-            <p class="center">Modules look 3</p>
+        <div class="modules-look-box click-box">
+            <img src="img/modules-look3.svg" alt="Modules look 3" class="modules-look-image">
         </div>
-        <div class="modules-look-box">
-            <img src="images/modules-look4.png" alt="Modules look 4" class="modules-look-image">
-            <p class="center">Modules look 4</p>
+        <div class="modules-look-box click-box">
+            <img src="img/modules-look4.svg" alt="Modules look 4" class="modules-look-image">
+            </div>
+        <div class="modules-look-box click-box">
+            <img src="img/modules-look5.svg" alt="Modules look 5" class="modules-look-image">
         </div>
-        <div class="modules-look-box">
-            <img src="images/modules-look5.png" alt="Modules look 5" class="modules-look-image">
-            <p class="center">Modules look 5</p>
+        <div class="modules-look-box click-box">
+            <img src="img/modules-look6.svg" alt="Modules look 6" class="modules-look-image">
         </div>
-        <div class="modules-look-box">
-            <img src="images/modules-look6.png" alt="Modules look 6" class="modules-look-image">
-            <p class="center">Modules look 6</p>
+        <div class="modules-look-box click-box">
+            <img src="img/modules-look7.svg" alt="Modules look 7" class="modules-look-image">
         </div>
-        <div class="modules-look-box">
-            <img src="images/modules-look7.png" alt="Modules look 7" class="modules-look-image">
-            <p class="center">Modules look 7</p>
-        </div>
-        <div class="modules-look-box">
-            <img src="images/modules-look8.png" alt="Modules look 8" class="modules-look-image">
-            <p class="center">Modules look 8</p>
+        <div class="modules-look-box click-box">
+            <img src="img/modules-look8.svg" alt="Modules look 8" class="modules-look-image">
         </div>
     </div>
-    <div class="search-box rounded-box">
-        <form action="search.php" method="post">
-            <input type="text" name="search" placeholder="Enter URL" class="input">
-            <input type="submit" value="Search" class="button">
+    <div>
+        <!-- When push submit button js code is run-->
+        <form>
+            <input type="text" name="search" placeholder="Enter URL" class="input" id="qr-code">
+            <input type="submit" value="Submit" class="button submit-url" onclick="generateQrCode()">
         </form>
     </div>
     <div class="center">
-        <a href="qr-codes.html" class="button">View Previously generated QR-codes</a>
+        <a href="qr-codes.html" class="button">View Previously generated QR-codes (Dumpster site)</a>
     </div>
 </div>
+
 </div>
 </body>
 <script src="js/script.js"></script>
+<script src="js/app.js"></script>
+<script type="module" src="node_modules/qrcode-generator/qrcode.js"></script>
 </html>

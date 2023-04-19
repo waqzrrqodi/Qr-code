@@ -24,6 +24,73 @@ h3
     padding: 0;
 }
 
+ul.nav-menu{
+    display: none;
+    }
+  
+    ul.dropdown-content {
+      display: block;
+      }
+    ul.nav-menu-dropdown{
+    display: flex;
+    flex-direction: column;
+    list-style: square;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    }
+    .menu-icon {
+    display: block;
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8vh;
+      background-color: #EE6352;
+      color: #fff;
+      position: sticky;
+      border-bottom: #C1C2EB solid 2px;
+      transition: all .5s ease-in;
+      z-index: 1;
+    }
+    .dropdown-content{
+      display: none;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      width: auto;
+      background-color: #ee6452ea;
+      z-index: 1;
+      animation: .5s dropin;
+    }
+    .Menu__choice {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 2vh;
+    }
+    .nav-item-dropdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-top: #C1C2EB solid 3px;
+    }
+    .nav-item-dropdown a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+
 .qr-code {
     width: 50%;
     height: 50%;
@@ -133,4 +200,59 @@ h3
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     margin: 2vh 2vw;
     width: 75%;
+}
+
+.submit-url {
+    background-color: #10dc7d;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    width: 100%;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: #ffffff;
+    width: 75%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    font-weight: 500;
+    color: #333;
+    transition-duration: 0.4s;
+    align-items: center;
+}
+
+.eye-look {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.modules-look {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.click-box {
+    background-color: #ffffff;
+    border-radius: 10%;
+    padding: 1.5%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin: .5vh .5vw;
+    width: 3vw;
+    height: auto;
 }

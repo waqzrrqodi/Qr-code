@@ -4,18 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/qr-codes.css">
+    <link rel="icon" href="img/logo.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
     <title>Qgen</title>
 </head>
 <body>
-    <h1 class="center top-margin white">Qgen</h1>
-    <h3 class="center white">Generate your own QR-codes with fun designs</h3>
-    <div class="container">
-        <div class="container rounded-box qr-box">
+    <nav class="navbar has-shadow is-white">
+        <!-- Logo / Brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="img/logo.png" alt="Qgen logo" class="py-2 px-2">
+            </a>
+            <a class="navbar-burger" id="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
-    </div>
+        <!-- Menu -->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="qr-codes.html">QR-codes</a>
+                <a class="navbar-item" href="about.html">About</a>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="box is-rounded">
+                        <h2 class="title">
+                        Previously generated QR-codes
+                        </h2>
+                        <div class="columns is-multiline" id="qr-codes">
+                            <a class="image">
+                                <img src="qr-codes/qr-code1.png" alt="QR-code">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <h3 class="">
+                        Enter the URL you want to generate a QR-code for and click on the generate button. The QR-code will be generated and you can download it from the QR-codes folder.
+                    </h3>
+                    <!-- Table with 4 rows and 3 columns-->
+                    <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th>Cool</th>
+                                <th>Text</th>
+                                <th>in</th>
+                                <th>Table</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- List of best things -->
+                    <h3 class="title">Best things:</h3>
+                    <ol class="list is-size-2 ml-6">
+                        <li>Bowl</li>
+                        <li>Taco shells</li>
+                        <li>Mirror</li>
+                        <li>Bucket</li>
+                        <li>Lava</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <form action="mailto:">
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" type="email" placeholder="Email input" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Subject input" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Textarea" required></textarea>
+                </div>
+            </div>
+            <iframe class="map" width="50%" height="40%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=18.05477231740952%2C59.32966652389545%2C18.058312833309177%2C59.330867772146156&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/59.33027/18.05654">View Larger Map</a></small>            <div class="field">
+                <div class="control">
+                    <button class="button is-link">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Qgen</strong> by <a href=""><i>Kasper Hägg</i></a>
+            </p>
+        </div>
+    </footer>
     <script src="js/qr-codes.js"></script>
 </body>
 </html>

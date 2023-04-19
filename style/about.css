@@ -13,29 +13,9 @@ body {
     padding: 0;
 }
 
-@keyframes lists {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.list {
-    animation: lists 1s ease-in-out;
-}
-
-@media screen and (max-width: 400px) {
-    .map {
-        width: 100%;
-    }
-    
-}
-
 footer {
-    width: 100%;
+    position: fixed;
+    left: 0;
     bottom: 0;
+    width: 100%;
 }

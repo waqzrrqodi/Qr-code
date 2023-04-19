@@ -1,18 +1,41 @@
-// First, get a reference to the div that will contain the images
-var imageContainer = $('#image-container');
+// Mobile menu
+const BurgerIcon = document.querySelector('#burger-icon');
+const navbarMenu = document.querySelector('#nav-links');
 
-// Then, use jQuery's AJAX function to retrieve the images from the server
-$.ajax({
-  url: 'qr-codes/',
-  success: function (data) {
-    // Once the images are retrieved, filter out any files that aren't PNGs
-    var pngFiles = $(data).find("a:contains('.png')");
-    
-    // Loop through each PNG file and add it to the image container
-    pngFiles.each(function () {
-      var imageUrl = 'qr-codes/' + $(this).attr('href');
-      var image = $('<img>').attr('src', imageUrl);
-      imageContainer.append(image);
-    });
-  }
+
+BurgerIcon.addEventListener('click', () => {
+  navbarMenu.classList.toggle('is-active');
 });
+
+// Get qr codes from device storage for later
+// const qrCodes = document.querySelector('#qr-codes');
+
+// function getQrCodes() {
+//     let qrCodes = localStorage.getItem('qrCodes');
+//     if (qrCodes === null) {
+//         qrCodesObj = [];
+//     } else {
+//         qrCodesObj = JSON.parse(qrCodes);
+//     }
+//     let html = '';
+//     qrCodesObj.forEach(function (element, index) {
+//         html += `
+//         <div class="qr-code">
+//         <div class="qr-code__img">
+//             <img src="${element}" alt="QR Code">
+//         </div>
+//         <div class="qr-code__btns">
+//             <button class="qr-code__btn" onclick="deleteQrCode(${index})">Delete</button>
+//             <button class="qr-code__btn" onclick="downloadQrCode(${index})">Download</button>
+//         </div>
+//         </div>
+//         `;
+//     });
+//     let qrCodesElm = document.getElementById('qr-codes');
+//     if (qrCodesObj.length != 0) {
+//         qrCodesElm.innerHTML = html;
+//     } else {
+//         qrCodesElm.innerHTML = `Nothing to show! Use "Generate QR Code" section above to generate a QR Code.`;
+//     }
+//     }
+
