@@ -10,6 +10,18 @@
     <title>Qgen</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Qgen logo">
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="qr-codes.html">QR-codes</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
     <h1 class="center top-margin">Qgen</h1>
     <h3 class="center">Generate your own QR-codes with fun designs</h3>
     <div class="container">
@@ -108,8 +120,8 @@
     </div>
     <div>
         <!-- When push submit button js code is run-->
-        <form>
-            <input type="text" name="search" placeholder="Enter URL" class="input" id="qr-code">
+        <form style="display: flex;">
+            <input type="url" name="search" placeholder="Enter URL" class="input" id="qr-code">
             <input type="submit" value="Submit" class="button submit-url" onclick="generateQrCode()">
         </form>
     </div>

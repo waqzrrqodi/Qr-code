@@ -38,4 +38,7 @@ body {
 footer {
     width: 100%;
     bottom: 0;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.cdn.turner.com%2Fmoney%2Finteractive%2Fnews%2Fburger-showdown%2Fassets%2Ffive-guys-b.png&f=1&nofb=1&ipt=e81500e49648dcec542d462af84315a0c2ec0ea36df4acce6904d3abf7fea7a8&ipo=images");
+    background-size: contain;
+    background-position: center;
 }
