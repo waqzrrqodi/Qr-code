@@ -7,6 +7,9 @@
     <link rel="icon" href="img/logo.ico">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="js/script.js" type="module"></script>
+    <script defer src="js/config.js" type="module"></script>
+    <script type="module" src="node_modules/qrcode-generator/qrcode.js"></script>
     <title>Qgen</title>
 </head>
 <body>
@@ -31,6 +34,9 @@
             <div class="left-box">
                 <div class="center">
                     <img src="qr-codes/qr-code2.png" alt="QR-code" class="qr-code">
+                    <div id="qr-code">
+
+                    </div>
                 </div>
                 <div class="center">
                     <p>Placeholder QR-code</p>
@@ -129,10 +135,6 @@
         <a href="qr-codes.html" class="button">View Previously generated QR-codes (Dumpster site)</a>
     </div>
 </div>
-
 </div>
 </body>
-<script src="js/script.js"></script>
-<script src="js/app.js"></script>
-<script type="module" src="node_modules/qrcode-generator/qrcode.js"></script>
 </html>
