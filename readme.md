@@ -1,5 +1,5 @@
 # ---------------- # ---------------- #
-# Title: README # Version: 0.0.1 # ----------------
+# Title: README # Version: 0.0.5 # ----------------
 # --------
 # Table of Contents
 # --------
@@ -17,9 +17,5 @@
 # 3. Enter a URL
 # 4. Click the button
 # 5. Generate a QR code
-# --------
-# Contributing
-# --------
-# 1. Fork it!
 # --------
 # ÅVA License 2036
