@@ -7,6 +7,7 @@
 # Installation
 # --------
 # 1. Clone the repo
+# 2. Get Linqr api key on RapidAPI and put in config.js
 # 2. Use away
 # --------
 # Usage
