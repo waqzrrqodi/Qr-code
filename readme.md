@@ -1,9 +1,9 @@
 # ---------------- # ---------------- #
-# Title: README # Version: 0.0.5 # ----------------
+# Title: README # Version: 0.0.6 # ----------------
 # --------
 # Table of Contents
 # --------
-# 1. [Installation](#installation) # 2. [Usage](#usage) # 3. [Contributing](#contributing) # 4. [License](#license) # --------
+# 1. [Installation](#installation) # 2. [Usage](#usage) # 3. [License](#license) # --------
 # Installation
 # --------
 # 1. Clone the repo
