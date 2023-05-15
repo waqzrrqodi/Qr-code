@@ -3,6 +3,29 @@ import { API_KEY } from './config.js';
 const box = document.getElementById("colour-text");
 const buttons = document.querySelectorAll(".colour-button");
 
+function choosenEye(boxId) {
+  // check if clicked eye box has class box-clicked
+  // if it does then remove it
+  // else add it
+  if (document.getElementById(boxId).classList.contains("box-clicked")) {
+    document.getElementById(boxId).classList.remove("box-clicked");
+  }
+  else {
+    document.getElementById(boxId).classList.add("box-clicked");
+  }
+}
+
+function choosenModule() {
+  // check if clicked module box has class box-clicked
+  // if it does then remove it
+  // else add it
+  if (modules.classList.contains("box-clicked")) {
+    modules.classList.remove("box-clicked");
+  } else {
+    modules.classList.add("box-clicked");
+  }
+}
+
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     box.style.color = button.classList[1];
