@@ -7,7 +7,7 @@
 # Installation
 # --------
 # 1. Clone the repo
-# 2. Get Linqr api key on [RapidAPI](#https://rapidapi.com/linqr-linqr-default/api/qrcode3) and put in config.js
+# 2. Get Linqr api key on [RapidAPI](https://rapidapi.com/linqr-linqr-default/api/qrcode3) and put in config.js
 # 2. Use away
 # --------
 # Usage
