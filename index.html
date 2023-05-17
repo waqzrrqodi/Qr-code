@@ -7,9 +7,10 @@
     <link rel="icon" href="img/logo.ico">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="js/script.js" type="module"></script>
-    <script defer src="js/config.js" type="module"></script>
-    <script type="module" src="node_modules/qrcode-generator/qrcode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvg/1.5/canvg.min.js" integrity="sha512-Wucjpk84udKVXsFLI8U+zeBZVmq/ufmoDwmF3ywTr+uJ1RnYj9sIGOU171+GFnMc1TI8WgjsJciM/vHJ7K1DRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/script.js" type="module"></script>
+    <script src="js/config.js" type="module"></script>
     <title>Qgen</title>
 </head>
 <body>
@@ -27,6 +28,8 @@
     </nav>
     <h1 class="center top-margin">Qgen</h1>
     <h3 class="center">Generate your own QR-codes with fun designs</h3>
+
+    <!-- The main boxes for the website -->
     <div class="container">
     <div class="rounded-box left-box">
         <p class="center">Enter the URL you want to generate a QR-code for and click on the generate button. The QR-code will be generated and you can download it from the QR-codes folder.</p>
@@ -35,7 +38,9 @@
                 <div class="center">
                     <img src="qr-codes/qr-code2.png" alt="QR-code" class="qr-code">
                     <div id="qr-code">
-
+                    </div>
+                    <div class="download-button">
+                        <a class="submit-url" id="download-button"> Download</a>
                     </div>
                 </div>
                 <div class="center">
@@ -54,77 +59,225 @@
                         <button class="colour-button teal"></button>
                         <h2 id="colour-text">Press button to change colour.</h2>
                 </div>
-                <div class="downloaders">
-                    <a href="qr-codes/qr-code2.png" download="qr-code2.png" class="button">Placerholder Download button</a>
-                </div>
             </div>
         </div>
     </div>
+    <!-- All the different configurations for the qr-code -->
     <div class="right-box">
     <div class="rounded-box">
         <h4>Eye look:</h4>
-        <div class="eye-look">
-            <div class="eye-look-box click-box" id="eye1" onclick="choosenEye('eye1')">
+        <div class="container">
+            <div class="eye-look-box click-box" id="default-eye">
                 <img src="img/eye-look1.svg" alt="Eye look 1" class="eye-look-image">
             </div>
-            <div class="eye-look-box click-box" id="eye2" onclick="choosenEye('eye2')">
+            <div class="eye-look-box click-box" id="lightround">
                 <img src="img/eye-look2.svg" alt="Eye look 2" class="eye-look-image">
             </div>
-            <div class="eye-look-box click-box" id="eye3" onclick="choosenEye('eye3')">
+            <div class="eye-look-box click-box" id="heavyround-eye">
                 <img src="img/eye-look3.svg" alt="Eye look 3" class="eye-look-image">
             </div>
-            <div class="eye-look-box click-box" id="eye4" onclick="choosenEye('eye4')">
+            <div class="eye-look-box click-box" id="horizontal_lines">
                 <img src="img/eye-look4.svg" alt="Eye look 4" class="eye-look-image">
             </div>
-            <div class="eye-look-box click-box" id="eye5" onclick="choosenEye('eye5')">
+            <div class="eye-look-box click-box" id="shield">
                 <img src="img/eye-look5.svg" alt="Eye look 5" class="eye-look-image">
             </div>
-            <div class="eye-look-box click-box" id="eye6" onclick="choosenEye('eye6')">
+            <div class="eye-look-box click-box" id="right_eye">
                 <img src="img/eye-look6.svg" alt="Eye look 6" class="eye-look-image">
             </div>
-            <div class="eye-look-box click-box" id="eye7" onclick="choosenEye('eye7')">
+            <div class="eye-look-box click-box" id="circle-eye">
                 <img src="img/eye-look7.svg" alt="Eye look 7" class="eye-look-image">
             </div>
-            <div class="eye-look-box click-box" onclick="choosenEye()">
+            <div class="eye-look-box click-box" id="sieve">
                 <img src="img/eye-look8.svg" alt="Eye look 8" class="eye-look-image">
             </div>
         </div>
     <h4>Modules look:</h4>
     <div class="modules-look">
-        <div class="modules-look-box click-box">
+        <div class="modules-look-box click-box" id="arrow">
             <img src="img/modules-look1.svg" alt="Modules look 1" class="modules-look-image">
         </div>
-        <div class="modules-look-box click-box">
+        <div class="modules-look-box click-box" id="circle-mod">
             <img src="img/modules-look2.svg" alt="Modules look 2" class="modules-look-image">
         </div>
-        <div class="modules-look-box click-box">
+        <div class="modules-look-box click-box" id="classic">
             <img src="img/modules-look3.svg" alt="Modules look 3" class="modules-look-image">
         </div>
-        <div class="modules-look-box click-box">
+        <div class="modules-look-box click-box" id="default-mod">
             <img src="img/modules-look4.svg" alt="Modules look 4" class="modules-look-image">
             </div>
-        <div class="modules-look-box click-box">
+        <div class="modules-look-box click-box" id="heavyround-mod">
             <img src="img/modules-look5.svg" alt="Modules look 5" class="modules-look-image">
         </div>
-        <div class="modules-look-box click-box">
+        <div class="modules-look-box click-box" id="sharp">
             <img src="img/modules-look6.svg" alt="Modules look 6" class="modules-look-image">
         </div>
-        <div class="modules-look-box click-box">
+        <div class="modules-look-box click-box" id="heart">
             <img src="img/modules-look7.svg" alt="Modules look 7" class="modules-look-image">
         </div>
-        <div class="modules-look-box click-box">
+        <div class="modules-look-box click-box" id="vertical_lines">
             <img src="img/modules-look8.svg" alt="Modules look 8" class="modules-look-image">
         </div>
     </div>
     <div>
         <!-- When push submit button js code is run-->
-        <form style="display: flex;">
-            <input type="url" name="search" placeholder="Enter URL" class="input" id="qr-code">
-            <input type="submit" value="Submit" class="button submit-url" onclick="generateQrCode()">
+        <form onsubmit="generateQrCode(event)">
+            <label for="urlInput">Enter a URL:</label>
+            <input type="url" id="urlInput" name="urlInput" required>
+            <button type="submit" class="submit-url">Generate QR-code</button>
         </form>
+        <script>
+            const API_KEY = ''
+
+            // Function to generate QR Code
+            function generateQrCode(event) {
+                event.preventDefault();
+                const urlInput = document.getElementById('urlInput').value;
+                console.log(urlInput);
+                let choosenColour = document.getElementById('colour-text').classList[0];
+                console.log(choosenColour);
+                if (choosenColour === undefined) {
+                    choosenColour = 'black';
+                }
+
+                // Checks which eye look is choosen
+                let choosenEye = null
+                let eyeBoxes = document.getElementsByClassName('eye-look-box');
+                Array.prototype.forEach.call(eyeBoxes, function (eyeBox) {
+                    if (eyeBox.classList.contains("box-clicked")) {
+                        choosenEye = eyeBox.id;
+                        console.log(choosenEye);
+                    }
+                    else {
+                        choosenEye = 'default';
+                    }
+                });
+
+                // Checks which module look is choosen
+                let choosenModule = null
+                let modBoxes = document.getElementsByClassName('modules-look-box');
+                Array.prototype.forEach.call(modBoxes, function (modBox) {
+                    if (modBox.classList.contains("box-clicked")) {
+                        choosenModule = modBox.id;
+                        console.log(choosenModule);
+                    }
+                    else {
+                        choosenModule = 'default';
+                    }
+                });
+
+                // if specific eye look is choosen, change the name to the one that is used in the API
+                if (choosenEye === 'default-eye') {
+                    choosenEye = 'default';
+                    console.log(choosenEye);
+                }
+                if (choosenEye === 'heavyround-eye') {
+                    choosenEye = 'heavyround';
+                    console.log(choosenEye);
+                }
+                if (choosenEye === 'circle-eye') {
+                    choosenEye = 'circle';
+                    console.log(choosenEye);
+                }
+
+                // if specific module look is choosen, change the name to the one that is used in the API
+                if (choosenModule === 'default-mod') {
+                    choosenModule = 'default';
+                    console.log(choosenModule);
+                }
+                if (choosenModule === 'heavyround-mod') {
+                    choosenModule = 'heavyround';
+                    console.log(choosenModule);
+                }
+                if (choosenModule === 'circle-mod') {
+                    choosenModule = 'circle';
+                    console.log(choosenModule);
+                }
+                console.log(`Going to use ${choosenEye} eye and ${choosenModule} module with the ${choosenColour} colour.`)
+
+                // using all perameters to generate QR code
+                const options = {
+                    method: 'POST',
+                    headers: {
+                        Accept: 'image/svg+xml',
+                        'Content-Type': 'application/json',
+                        'X-RapidAPI-Key': API_KEY,
+                    },
+                    body: JSON.stringify({
+                        data: urlInput,
+                        style: {
+                        module: {color: choosenColour, shape: choosenModule},
+                        inner_eye: {shape: 'default'},
+                        outer_eye: {shape: choosenEye},
+                        },
+                        size: {width: 100, quiet_zone: 4, error_correction: 'M'},
+                        output: {filename: 'qrcode', format: 'svg'}
+                    })
+                    };
+
+                fetch('https://qrcode3.p.rapidapi.com/qrcode/text', options)
+                    .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                    })
+                    .then(data => {
+                    // Display the SVG code in the qr-code div
+                    document.getElementById("qr-code").innerHTML = data;
+                    document.getElementsByClassName("qr-code")[0].style.display = "none";
+                    document.getElementsByClassName("download-button")[0].style.display = "flex";
+                    })
+                    .then(() => {
+                    // Get the SVG code from the qr-code div
+                    let qrCodeDiv = document.getElementById("qr-code");
+                    let svgElement = qrCodeDiv.querySelector("svg");
+                    let svgString = new XMLSerializer().serializeToString(svgElement);
+
+                    // Get the download button
+                    let downloadButton = document.getElementById("download-button");
+
+                    // Set up the click event listener for the download button
+                    downloadButton.addEventListener("click", function() {
+                    // Create an invisible canvas element
+                    console.log('Create an invisible canvas element')
+                    let canvas = document.createElement("canvas");
+                    let context = canvas.getContext("2d");
+
+                    // Get the bounding box of the SVG element
+                    let bbox = svgElement.getBoundingClientRect();
+
+                    // Set the canvas dimensions to match the bounding box of the SVG
+                    canvas.width = bbox.width;
+                    canvas.height = bbox.height;
+
+                    // Use Canvg to render the SVG to the canvas
+                    canvg(canvas, svgString);
+
+                    // Convert the canvas to a PNG image
+                    let pngImage = canvas.toDataURL("image/png");
+                    console.log(pngImage);
+
+                    // Set the download link href to the PNG image
+                    downloadButton.href = pngImage;
+
+                    // Trigger the download
+                    downloadButton.download = "qr-code.png";
+                    });
+
+                    })
+                    .catch(err => console.error(err));
+                }
+
+        </script>
+        <script>
+            
+        </script>
     </div>
     <div class="center">
         <a href="qr-codes.html" class="button">View dumpster site</a>
+    </div>
     </div>
 </div>
 </div>

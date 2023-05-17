@@ -118,17 +118,9 @@ ul.nav-menu{
 }
 
 .top-margin {
-    margin-top: 5%;
+    margin-top: 2vh;
 }
 
-.container {
-    margin: 1vh auto;
-    max-width: 75vw;
-    height: 50vh;
-    padding: 0 20px;
-    display: flex;
-    align-items: baseline;
-}
 
 .colour-picker {
     display: flex;
@@ -156,11 +148,11 @@ ul.nav-menu{
   }
 
 .blue {
-    background-color: #1877F2;
+    background-color: #00008B;
   }
 
 .purple {
-    background-color: #5133BC;
+    background-color: #800080;
   }
 
 .green {
@@ -168,15 +160,15 @@ ul.nav-menu{
   }
 
 .red {
-    background-color: #D4134A;
+    background-color: #FF0000;
   }
 
 .pink {
-    background-color: #841839;
+    background-color: #FFC0CB;
   }
 
 .teal {
-    background-color: #489EAB;
+    background-color: #008080;
   }
 
 .rounded-box {
@@ -277,7 +269,7 @@ ul.nav-menu{
 
 }
 
-.eye-look {
+.container {
     width: 100%;
     height: fit-content;
     margin: 0 auto;
@@ -309,5 +301,10 @@ ul.nav-menu{
 }
 
 .box-clicked {
-    border: 50px solid #10dc7d;
+    border: 1% solid #10dc7d;
+    background-color: #10dc7d;
+}
+
+.download-button{
+    display: none;
 }
