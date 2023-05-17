@@ -74,8 +74,8 @@ ul.nav-menu{
     align-items: center;
 }
 
-.navbar-links::hover{
-    background-color: #333;
+.navbar-links a:hover{
+    background-color: #33333353;
     color: #333;
 }
 

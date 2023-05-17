@@ -14,7 +14,7 @@ let previousEyeButton = null;
       }
       previousEyeButton = event.currentTarget;
       previousEyeButton.classList.add("box-clicked");
-      console.log(previousEyeButton);
+      // console.log(previousEyeButton);
     });
   }
 );
@@ -30,7 +30,7 @@ let previousModuleButton = null;
       }
       previousModuleButton = event.currentTarget;
       previousModuleButton.classList.add("box-clicked");
-      console.log(previousModuleButton);
+      // console.log(previousModuleButton);
     });
   }
 );
@@ -42,5 +42,6 @@ buttons.forEach(button => {
     box.classList.remove("red", "blue", "green", "yellow", "purple", "orange", "pink", "black", "white", "teal");
     box.classList.add(button.classList[1]);
     const choosenColour = button.classList[1];
-    console.log(choosenColour);});
+    // console.log(choosenColour);
+  });
   });
