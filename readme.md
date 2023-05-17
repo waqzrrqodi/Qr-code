@@ -1,12 +1,13 @@
 # ---------------- # ---------------- #
-# Title: README # Version: 0.0.1 # ----------------
+# Title: README # Version: 0.0.6 # ----------------
 # --------
 # Table of Contents
 # --------
-# 1. [Installation](#installation) # 2. [Usage](#usage) # 3. [Contributing](#contributing) # 4. [License](#license) # --------
+# 1. [Installation](#installation) # 2. [Usage](#usage) # 3. [License](#license) # --------
 # Installation
 # --------
 # 1. Clone the repo
+# 2. Get Linqr api key on [RapidAPI](https://rapidapi.com/linqr-linqr-default/api/qrcode3) and put in config.js
 # 2. Use away
 # --------
 # Usage
@@ -16,9 +17,5 @@
 # 3. Enter a URL
 # 4. Click the button
 # 5. Generate a QR code
-# --------
-# Contributing
-# --------
-# 1. Fork it!
 # --------
 # ÅVA License 2036
