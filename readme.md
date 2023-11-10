@@ -1,5 +1,5 @@
 # ---------------- # ---------------- #
-# Title: README # Version: 0.0.6 # ----------------
+# Title: README # Version: 0.0.6 #
 # --------
 # Table of Contents
 # --------
